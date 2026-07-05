@@ -45,7 +45,7 @@ export const projects: Project[] = [
       result:
         "El proyecto culminó con un sitio web completamente renovado, más claro, consistente y alineado con la identidad de Idiomas PUCP, ofreciendo una experiencia más intuitiva para sus usuarios.",
     },
-    video: "/images/projects/pucp/landing-pucp-video.webm",
+    video: "/images/projects/pucp/landing-pucp-video.mp4",
     gallery: [
       {
         src: "/images/projects/pucp/proyecto-pucp-galeria-1.png",
