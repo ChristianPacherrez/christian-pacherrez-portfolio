@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+:root {
+  /* Brand palette */
+  --color-primary: #32ffba;
+  --color-secondary: #beb1ff;
+  --color-text: #121228;
+  --color-background: #f5f5f5;
+  --color-surface: #fcfcfc;
+
+  /* Map brand palette onto HeroUI's design tokens so every HeroUI
+     component (Button, Chip, Link, focus rings...) uses our brand
+     colors without per-component overrides. */
+  --background: var(--color-background);
+  --foreground: var(--color-text);
+  --surface: var(--color-surface);
+  --surface-foreground: var(--color-text);
+  --accent: var(--color-primary);
+  --accent-foreground: var(--color-text);
+  /* --color-primary/--color-secondary are pastel and fail WCAG 3:1 for UI
+     elements on a white background, so focus rings use --color-text instead. */
+  --focus: var(--color-text);
+  --link: var(--color-text);
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-text: var(--color-text);
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --font-display: var(--font-clash-display);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
