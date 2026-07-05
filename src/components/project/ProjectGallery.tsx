@@ -18,7 +18,7 @@ export function ProjectGallery({ video, images }: ProjectGalleryProps) {
   return (
     <div className="flex flex-col gap-3">
       {video ? (
-        <div className="bg-surface rounded-[4px] p-12">
+        <div className="bg-surface rounded-[4px] p-5 lg:p-12">
           <ProjectVideo
             src={video}
             className="aspect-[1686/1052] w-full rounded-lg object-cover shadow-[0px_2px_8px_0px_rgba(0,0,0,0.06),0px_-6px_12px_0px_rgba(0,0,0,0.03),0px_14px_28px_0px_rgba(0,0,0,0.08)]"

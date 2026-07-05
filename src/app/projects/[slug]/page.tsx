@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ProcessList } from "@/components/project/ProcessList";
+import { ProjectBackground } from "@/components/project/ProjectBackground";
 import { ProjectGallery } from "@/components/project/ProjectGallery";
 import { ProjectHeader } from "@/components/project/ProjectHeader";
 import { ProjectInfo } from "@/components/project/ProjectInfo";
@@ -47,7 +48,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const sections = project.sections;
 
   return (
-    <>
+    <div className="relative">
+      <ProjectBackground />
       <Header />
       <main className="flex-1">
         <Container className="flex flex-col gap-12 pt-6 pb-12">
@@ -103,6 +105,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </Container>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

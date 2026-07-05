@@ -14,7 +14,7 @@ export function ProjectMobileNav() {
   return (
     <nav
       aria-label="Navegación del proyecto"
-      className="sticky top-20 z-40 flex items-center gap-2 overflow-x-auto rounded-full border border-black/[0.08] bg-white/85 px-3 py-2 backdrop-blur-md lg:hidden"
+      className="sticky top-20 z-40 flex items-center gap-2 overflow-x-auto rounded-full border border-black/[0.08] bg-white/85 px-0.5 py-2.5 backdrop-blur-md lg:hidden"
     >
       {PROJECT_NAV_ITEMS.map((item) => (
         <a

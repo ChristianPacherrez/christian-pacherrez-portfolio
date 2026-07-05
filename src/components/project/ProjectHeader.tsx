@@ -27,13 +27,13 @@ export function ProjectHeader({ project }: ProjectHeaderProps) {
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-text rounded-lg bg-white px-3 py-1 text-base font-medium"
+                className="text-text rounded-lg bg-white px-3 py-1 text-sm font-medium lg:text-base"
               >
                 {tag}
               </span>
             ))}
           </div>
-          <h1 className="font-display text-text text-5xl leading-[56px] font-medium">
+          <h1 className="font-display text-text text-[40px] leading-[48px] font-medium lg:text-5xl lg:leading-[56px]">
             {project.title}
           </h1>
         </div>
