@@ -137,6 +137,88 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    id: "3",
+    slug: "inti-bank",
+    title: "Inti Bank",
+    description:
+      "Durante mi formación en Product Design desarrollé, junto a mi equipo y en colaboración con el Product Owner de Caja Arequipa, un caso de estudio para diseñar Inti Bank, un neobanco pensado para conectar con la Generación Z. El proyecto abarcó desde la investigación y definición del problema hasta el diseño de la solución, validaciones con usuarios y la construcción de la interfaz final.",
+    coverImage: "/images/projects/inti-bank/proyecto-inti-bank-miniatura.webp",
+    year: "Febrero - 2024",
+    client: "Caja Arequipa",
+    duration: "3 meses",
+    role: "Product Designer",
+    website: "https://www.behance.net/gallery/204186203/Inti-Caso-de-Estudio-de-Product-Design",
+    figma:
+      "https://www.figma.com/design/VAe2bDRZpROH6HLihy2BTj/UI-Design---Inti-App?node-id=0-1&t=OtxhfOaZA62NlFV2-1",
+    featured: true,
+    tags: ["Product Design", "APP", "Case Study"],
+    sections: {
+      challenge:
+        "El desafío consistía en crear una nueva propuesta digital para Caja Arequipa mediante una marca blanca capaz de atraer a usuarios de la Generación Z. La solución debía responder a sus hábitos, expectativas y forma de relacionarse con los servicios financieros.",
+      solution:
+        "Propusimos Inti Bank, un concepto de neobanco diseñado a partir de la investigación con usuarios y objetivos de negocio. La propuesta priorizó una experiencia simple, cercana y completamente digital, alineando las necesidades de los usuarios con la estrategia del cliente.",
+      process: [
+        {
+          label: "Investigación",
+          description: "Del reto de negocio e investigación con usuarios.",
+        },
+        {
+          label: "Definición",
+          description: "Del problema y planteamiento de hipótesis.",
+        },
+        {
+          label: "Diseño",
+          description: "De la arquitectura de la solución y principios de experiencia.",
+        },
+        {
+          label: "Validación",
+          description:
+            "Mediante testeos, creación del UI Kit, interfaces en alta fidelidad y estrategia de Growth.",
+        },
+      ],
+      result:
+        "El resultado fue un caso de estudio que permitió validar una propuesta de valor para un neobanco orientado a la Generación Z, demostrando cómo un proceso de Product Design puede transformar necesidades de negocio e insights de usuarios en una experiencia digital coherente y centrada en las personas.",
+    },
+    gallery: [
+      {
+        src: "/images/projects/inti-bank/proyecto-intibank-galeria-1.webp",
+        alt: "Portada del caso de estudio de Inti Bank, el proyecto de neobanco",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        src: "/images/projects/inti-bank/proyecto-intibank-galeria-2.webp",
+        alt: "UI Kit de Inti Bank con la paleta de colores y tipografía del proyecto",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        src: "/images/projects/inti-bank/proyecto-intibank-galeria-3.webp",
+        alt: "Componentes de la interfaz de Inti Bank",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        src: "/images/projects/inti-bank/proyecto-intibank-galeria-5.webp",
+        alt: "Hallazgos de la investigación con usuarios de Inti Bank",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        src: "/images/projects/inti-bank/proyecto-intibank-galeria-6.webp",
+        alt: "Wireframes de las pantallas de Inti Bank",
+        width: 1080,
+        height: 721,
+      },
+      {
+        src: "/images/projects/inti-bank/proyecto-intibank-galeria-7.webp",
+        alt: "Pantallas finales de alta fidelidad de la app Inti Bank",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+  },
 ];
 
 export function getFeaturedProjects(): Project[] {

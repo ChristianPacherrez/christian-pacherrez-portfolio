@@ -5,7 +5,9 @@ export type ProjectTag =
   | "Development"
   | "Product Design"
   | "Product Designer"
-  | "Plataforma Web";
+  | "Plataforma Web"
+  | "APP"
+  | "Case Study";
 
 export interface ProcessStep {
   label: string;
