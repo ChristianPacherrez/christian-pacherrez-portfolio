@@ -37,9 +37,9 @@ export const projects: Project[] = [
             "Desarrollé la propuesta en Figma, desde la estructura hasta los prototipos de alta fidelidad.",
         },
         {
-          label: "Desarrollo",
+          label: "QA y acompañamiento",
           description:
-            "Implementé el proyecto utilizando WordPress, cuidando que el resultado final respetara el diseño aprobado.",
+            "Brindé soporte al equipo de desarrollo realizando revisiones de calidad (QA), validando que la implementación respetara el diseño aprobado y documentando los ajustes necesarios para mantener la consistencia de la experiencia.",
         },
       ],
       result:
